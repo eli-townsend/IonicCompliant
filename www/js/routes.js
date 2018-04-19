@@ -45,25 +45,63 @@ angular.module('app.routes', [])
     abstract:true
   })
 
-  .state('compliantItem', {
+  .state('tabsController.compliantItem', {
     url: '/page5',
-    templateUrl: 'templates/compliantItem.html',
-    controller: 'compliantItemCtrl'
+    views: {
+      'tab1': {
+        templateUrl: 'templates/compliantItem.html',
+        controller: 'compliantItemCtrl'
+      }
+    }
   })
 
-  .state('nonCompliantItem', {
+  .state('tabsController.nonCompliantItem', {
     url: '/page6',
-    templateUrl: 'templates/nonCompliantItem.html',
-    controller: 'nonCompliantItemCtrl'
+    views: {
+      'tab1': {
+        templateUrl: 'templates/nonCompliantItem.html',
+        controller: 'nonCompliantItemCtrl'
+      }
+    }
   })
 
-  .state('about', {
+  .state('tabsController.about', {
     url: '/page7',
-    templateUrl: 'templates/about.html',
-    controller: 'aboutCtrl'
+    views: {
+      'tab3': {
+        templateUrl: 'templates/about.html',
+        controller: 'aboutCtrl'
+      }
+    }
   })
 
-$urlRouterProvider.otherwise('/page1/settings')
+  .state('tabsController.suggest', {
+    url: '/page9',
+    views: {
+      'tab3': {
+        templateUrl: 'templates/suggest.html',
+        controller: 'suggestCtrl'
+      }
+    }
+  })
+
+  .state('page', {
+    url: '/page10',
+    templateUrl: 'templates/page.html',
+    controller: 'pageCtrl'
+  })
+
+  .state('tabsController.termsOfService', {
+    url: '/page11',
+    views: {
+      'tab3': {
+        templateUrl: 'templates/termsOfService.html',
+        controller: 'termsOfServiceCtrl'
+      }
+    }
+  })
+
+$urlRouterProvider.otherwise('/page1/barcode')
 
 
 });

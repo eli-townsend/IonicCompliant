@@ -1,12 +1,12 @@
 <ion-view title="Settings" id="page4">
   <ion-nav-buttons side="right" class="has-header">
-    <button class="button button-stable icon ion-android-arrow-dropdown"> Whole30</button>
+    <button class="button button-icon icon ion-android-arrow-dropdown"> Whole30</button>
   </ion-nav-buttons>
   <ion-content padding="true" class="has-header">
     <ion-list id="settings-list2">
-      <ion-item id="settings-list-item6">About</ion-item>
-      <ion-item id="settings-list-item7">Suggest Non-Approved Item</ion-item>
-      <ion-item id="settings-list-item8">Terms of Service</ion-item>
+      <ion-item id="settings-list-item6" ui-sref="tabsController.about()">About</ion-item>
+      <ion-item id="settings-list-item7" ui-sref="tabsController.suggest()">Suggest Non-Approved Item</ion-item>
+      <ion-item id="settings-list-item8" ui-sref="tabsController.termsOfService()">Terms of Service</ion-item>
     </ion-list>
   </ion-content>
 </ion-view>
