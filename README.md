@@ -26,4 +26,5 @@ Run `ionic serve` for a dev server. Navigate to `http://localhost:4200/`. The ap
 
 To stop the server without quitting the terminal `ctrl + c`
 
-## Further help
+## Further help/Assets
+[Ionicons](http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css)
